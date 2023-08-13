@@ -12,7 +12,7 @@ let server: Server
 
 async function bootstrap() {
   try {
-    server = app.listen(config.port, () => {
+    server = app.listen(config.puort, () => {
       console.log(`Application  listening on port ${config.port}`)
     })
   } catch (err) {
