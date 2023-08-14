@@ -15,7 +15,7 @@ const getUsers=async()=>{
   return result
 }
 
-// get aingle user
+// get single user
 const getUser=async(id:string):Promise<Users |null>=>{
 const result = await prisma.users.findUnique({
   where:{
